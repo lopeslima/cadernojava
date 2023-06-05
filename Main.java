@@ -1,25 +1,36 @@
 class Main {
-  public static void main(String[] args) {
-    System.out.println("Olá Mundo!");
-    int myNum = 8;
-    float myFloatNum = 6.99f;
-    char myLetter = 'M';
-    boolean myBool = false;
-    String myText = "boa";
-    System.out.println(myNum);
-    System.out.println(myFloatNum);
-    System.out.println(myLetter);
-    System.out.println(myBool);
-    System.out.println(myText); 
-    // parte dois do código
-    System.out.println(myText + myBool);
-    int x = 8;
-    float y = x;
-    System.out.println(x);
-    System.out.println(y);
-    double myDouble = 5.99d;
-    int myInt = (int) myDouble; // Manual casting: double to int
-    System.out.println(myDouble);
-    System.out.println(myInt);
+   static void impPrime(){
+    System.out.println("Só imprime isso");
   }
+  
+  static void meuMetodo(String nome) {
+    System.out.println("O nome é: " + nome);
+  }
+
+
+    static void nomeEidade(String nome,int ano) {
+    System.out.println(nome + " tem "+ano + " anos");
+  }
+
+    
+  public static void main (String[] args){
+
+  impPrime();
+  
+  meuMetodo("Julia");
+  meuMetodo("Deivid");
+  meuMetodo("Isabella");
+
+  nomeEidade("Julia", 17);
+  nomeEidade("Deivid", 17);
+  nomeEidade("Isabella", 20);
+
+                           
+  
+}
+
+
+
+
+  
 }
